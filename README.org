@@ -1,20 +1,20 @@
 * Spring 2022 - Lab 08
 
-* Last name:
+* Last name: Zhou
 
-* First name:
+* First name: John
 
-* GitHub username:
+* GitHub username: johnzhou1210
 
 * Notes:
 
 
-  
+
 * General instructions:
 - Fill in your name and GitHub username on top.
 - Use the Notes section to add any notes to the instructor.
 - The main lab description can be found here:
-  https://maryash.github.io/135/labs/lab_08.html 
+  https://maryash.github.io/135/labs/lab_08.html
 
 
 * Specific instructions for lab 08
@@ -45,7 +45,7 @@ Important specifics:
    for *main* which builds the program and *clean* which removes ~.o~
    files.
 2. Your program must consist of *at least* two ~.cpp~ files if not
-   more, not counting ~imageio.cpp~. 
+   more, not counting ~imageio.cpp~.
 3. You *should not* change anything in ~iamgeio.cpp~.
 4. This lab should *not* use ~doctest.h~, it should just run with no
    user input and generate the output images.
