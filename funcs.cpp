@@ -137,10 +137,15 @@ void pixelate(std::string fileName)
 
   for(int row = 0; row < h; row = row + 2) {
     for(int col = 0; col < w; col = col + 2) {
-      out[row][col] = img[row][col];
-      if (isValid(row + 1, col)){ out[row + 1][col] = img[row][col]; }
-      if (isValid(row + 1, col + 1)){ out[row + 1][col + 1] = img[row][col]; }
-      if (isValid(row, col + 1)){ out[row][col + 1] = img[row][col]; }
+      int avg = img[row][col];
+      out[row][col] = avg;
+      if (isValid(row + 1, col))
+      { 
+        avg = (img[row][col] + img[row + 1][col]) / 2;
+        out[row + 1][col] = avg;
+      }
+      if (isValid(row + 1, col + 1)){ out[row + 1][col + 1] = avg; }
+      if (isValid(row, col + 1)){ out[row][col + 1] = avg; }
     }
   }
   writeImage("taskF.pgm",out, h, w);
